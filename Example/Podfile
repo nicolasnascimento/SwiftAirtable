@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftAirtable_Example' do
+  pod 'SwiftAirtable', :path => '../'
+
+  target 'SwiftAirtable_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
