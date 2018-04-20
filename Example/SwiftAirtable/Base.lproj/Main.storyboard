@@ -28,31 +28,25 @@
                                         <rect key="frame" x="0.0" y="302.5" width="335" height="292.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byX-wd-fo1">
-                                                <rect key="frame" x="0.0" y="0.0" width="335" height="58.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="73"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLD-Bt-Wer">
-                                                <rect key="frame" x="0.0" y="58.5" width="335" height="58.5"/>
+                                                <rect key="frame" x="0.0" y="73" width="335" height="73.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hob-zz-a6M">
-                                                <rect key="frame" x="0.0" y="117" width="335" height="58.5"/>
+                                                <rect key="frame" x="0.0" y="146.5" width="335" height="73"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cool? YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLX-Et-FLy">
-                                                <rect key="frame" x="0.0" y="175.5" width="335" height="58.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expertise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cR4-Ly-k2h">
-                                                <rect key="frame" x="0.0" y="234" width="335" height="58.5"/>
+                                                <rect key="frame" x="0.0" y="219.5" width="335" height="73"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -80,7 +74,6 @@
                         <outlet property="age" destination="hLD-Bt-Wer" id="fbp-Ou-gbT"/>
                         <outlet property="cool" destination="kLX-Et-FLy" id="qJz-BT-BLW"/>
                         <outlet property="date" destination="Hob-zz-a6M" id="BYT-x0-iry"/>
-                        <outlet property="expertise" destination="cR4-Ly-k2h" id="bJ0-Wi-Q3N"/>
                         <outlet property="indicator" destination="dt8-Io-tyg" id="I2m-5v-AiT"/>
                         <outlet property="name" destination="byX-wd-fo1" id="puN-tp-4Iq"/>
                         <outlet property="photo" destination="bUQ-0K-Crd" id="JQW-dJ-hb9"/>

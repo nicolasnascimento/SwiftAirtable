@@ -30,6 +30,7 @@ extension AirtablePerson {
     }
 }
 
+// MARK: - AirtableObject
 extension AirtablePerson: AirtableObject {
     
     static var fieldKeys: [(fieldName: String, fieldType: AirtableTableSchemaFieldKey.KeyType)] {
@@ -44,7 +45,7 @@ extension AirtablePerson: AirtableObject {
     
     func value(forKey key: AirtableTableSchemaFieldKey) -> AirtableValue? {
         switch key {
-        case AirtableTableSchemaFieldKey(fieldName: AirtableField.name.rawValue, fieldType: .singleSelect): return self.name
+        case AirtableTableSchemaFieldKey(fieldName: AirtableField.name.rawValue, fieldType: .singleLineText): return self.name
         case AirtableTableSchemaFieldKey(fieldName: AirtableField.age.rawValue, fieldType: .number): return self.age
         case AirtableTableSchemaFieldKey(fieldName: AirtableField.photo.rawValue, fieldType: .attachment): return self.photo
         case AirtableTableSchemaFieldKey(fieldName: AirtableField.date.rawValue, fieldType: .dateWithHour): return self.date
@@ -57,7 +58,7 @@ extension AirtablePerson: AirtableObject {
         self.id = id
         tableSchemaKeys.forEach { element in
             switch element.key {
-            case AirtableTableSchemaFieldKey(fieldName: AirtableField.name.rawValue, fieldType: .singleSelect): self.name = element.value.stringValue
+            case AirtableTableSchemaFieldKey(fieldName: AirtableField.name.rawValue, fieldType: .singleLineText): self.name = element.value.stringValue
             case AirtableTableSchemaFieldKey(fieldName: AirtableField.age.rawValue, fieldType: .number): self.age = element.value.intValue
             case AirtableTableSchemaFieldKey(fieldName: AirtableField.photo.rawValue, fieldType: .attachment):
                 if let attachment = (element.value as? [AirtableAttachment])?.first {
