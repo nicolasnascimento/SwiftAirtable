@@ -6,8 +6,6 @@
 [![Platform](https://img.shields.io/cocoapods/p/SwiftAirtable.svg?style=flat)](http://cocoapods.org/pods/SwiftAirtable)
 
 
-##
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -26,6 +24,10 @@ pod 'SwiftAirtable'
 ## Author
 
 nicolasnascimento, npn.adsl@gmail.com
+
+## Soucery
+
+Optionally you can use Sourcery to automatically generate the AirtableObject protocol
 
 ## License
 
