@@ -28,7 +28,7 @@ nicolasnascimento, npn.adsl@gmail.com
 
 ## Soucery
 
-Optionally you can use Sourcery (https://github.com/krzysztofzablocki/Sourcery) to automatically generate the AirtableObject protocol implementation
+An stencil file is provided in the repo that allows you use Sourcery (https://github.com/krzysztofzablocki/Sourcery) for code generation
 
 ## License
 
