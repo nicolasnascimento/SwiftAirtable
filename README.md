@@ -17,6 +17,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 SwiftAirtable is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+
 ```ruby
 pod 'SwiftAirtable'
 ```
@@ -27,7 +28,7 @@ nicolasnascimento, npn.adsl@gmail.com
 
 ## Soucery
 
-Optionally you can use Sourcery to automatically generate the AirtableObject protocol
+Optionally you can use Sourcery (https://github.com/krzysztofzablocki/Sourcery) to automatically generate the AirtableObject protocol implementation
 
 ## License
 
