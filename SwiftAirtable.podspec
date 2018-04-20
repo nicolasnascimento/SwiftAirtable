@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftAirtable'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SwiftAirtable.'
+  s.version          = '1.0.0'
+  s.summary          = 'A Swift Interface to Interact with the REST API from Airtable'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    SwiftAirtable makes interacting with REST API from Airtable much easier and straight forward.
                        DESC
 
   s.homepage         = 'https://github.com/nicolasnascimento/SwiftAirtable'
@@ -26,10 +26,8 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'nicolasnascimento' => 'npn.adsl@gmail.com' }
   s.source           = { :git => 'https://github.com/nicolasnascimento/SwiftAirtable.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
+  s.social_media_url = 'https://twitter.com/npnadsl'
+  s.ios.deployment_target = '10.0'
   s.source_files = 'SwiftAirtable/Classes/**/*'
   
   # s.resource_bundles = {
@@ -37,6 +35,4 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

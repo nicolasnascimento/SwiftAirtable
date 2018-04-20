@@ -1,0 +1,6 @@
+framework module Pods_SwiftAirtable_Tests {
+  umbrella header "Pods-SwiftAirtable_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

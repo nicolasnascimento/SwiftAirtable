@@ -3,26 +3,11 @@ import SwiftAirtable
 
 class Tests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testAirtableInit() {
+        var fields = [(fieldName: String, fieldType: AirtableTableSchemaFieldKey.KeyType)]()
+        fields.append((fieldName: "name", fieldType: .singleLineText))
+        let fieldsKey = fields.map{ AirtableTableSchemaFieldKey(fieldName: $0.fieldName, fieldType: $0.fieldType) }
+        let _ = Airtable(apiKey: "AN_API_KEY", apiBaseUrl: "AN_API_BASE_URL", schema: AirtableTableSchema(fieldsKeys: fieldsKey))
+
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
