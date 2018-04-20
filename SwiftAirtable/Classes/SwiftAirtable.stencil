@@ -1,0 +1,78 @@
+import Foundation
+import SwiftAirtable
+
+{% for type in types.implementing.AutoAirtableObject %}
+// MARK: {{ type.name }} AirtableObject
+extension {{type.name}}: AirtableObject{
+
+	static var fieldKeys: [(fieldName: String, fieldType: AirtableTableSchemaFieldKey.AirtableTableSchemaFieldKeyType)] {
+		var values: [(fieldName: String, fieldType: AirtableTableSchemaFieldKey.AirtableTableSchemaFieldKeyType)] = []
+		{% for variable in type.storedVariables %}
+			{%if variable.name != "id" %}
+				{% if variable.typeName.name == "String" %}
+		values.append((fieldName: "{{variable.name}}", fieldType: .singleLineText))
+				{% elif variable.typeName.name == "Int" %}
+		values.append((fieldName: "{{variable.name}}", fieldType: .number))
+				{% elif variable.typeName.name == "AirtableAttachment" %}
+		values.append((fieldName: "{{variable.name}}", fieldType: .attachment))
+				{% elif variable.typeName.name == "Date" %}
+		values.append((fieldName: "{{variable.name}}", fieldType: .dateWithHour))
+				{% elif variable.typeName.name == "Bool" %}
+		values.append((fieldName: "{{variable.name}}", fieldType: .checkbox))
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+		return values
+	}
+		
+
+	func value(forKey key: AirtableTableSchemaFieldKey) -> AirtableValue? {
+        switch (key.fieldType, key.fieldName) {
+		{% for variable in type.storedVariables %}
+			{%if variable.name != "id" %}
+				{% if variable.typeName.name == "String" %}
+		case (.singleLineText, "{{variable.name}}"): return self.{{variable.name}}
+				{% elif variable.typeName.name == "Int" %}
+		case (.number, "{{variable.name}}"): return self.{{variable.name}}
+				{% elif variable.typeName.name == "AirtableAttachment" %}
+		case (.attachment, "{{variable.name}}"): return self.{{variable.name}}
+				{% elif variable.typeName.name == "Date" %}
+		case (.dateWithHour, "{{variable.name}}"): return self.{{variable.name}}
+				{% elif variable.typeName.name == "Bool" %}
+		case (.checkbox, "{{variable.name}}"): return self.{{variable.name}}
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+		default: return nil
+		}
+	}
+		
+	init(withId id: String, populatedTableSchemaKeys tableSchemaKeys: [AirtableTableSchemaFieldKey: AirtableValue]) {
+		self.id = id
+		tableSchemaKeys.forEach { key, value in
+			switch (key.fieldType, key.fieldName) {
+
+		{% for variable in type.storedVariables %}
+			{% if variable.name != "id" %}
+				{% if variable.typeName.name == "String" %}
+			case (.singleLineText, "{{variable.name}}"): self.{{variable.name}} = value.stringValue
+				{% elif variable.typeName.name == "Int" %}
+			case (.number, "{{variable.name}}"): self.{{variable.name}} = value.intValue
+				{% elif variable.typeName.name == "AirtableAttachment" %}
+			case (.attachment, "{{variable.name}}"): 
+				if let attachment = (value as? [AirtableAttachment])?.first {
+					self.{{variable.name}} = attachment
+				}
+				{% elif variable.typeName.name == "Date" %}
+			case (.dateWithHour, "{{variable.name}}"): self.{{variable.name}} = value.dateValue
+				{% elif variable.typeName.name == "Bool" %}
+			case (.checkbox, "{{variable.name}}"): self.{{variable.name}} = value.boolValue
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+			default: break
+			}
+		}
+    }
+}
+{% endfor %}

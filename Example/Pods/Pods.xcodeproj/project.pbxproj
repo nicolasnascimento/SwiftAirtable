@@ -31,20 +31,20 @@
 
 /* Begin PBXFileReference section */
 		101A256E5EF0A89B55A611811C711C4C /* Pods-SwiftAirtable_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftAirtable_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1874BF172847F198EE7CB88D8F979041 /* Pods_SwiftAirtable_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftAirtable_Tests.framework; path = "Pods-SwiftAirtable_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1874BF172847F198EE7CB88D8F979041 /* Pods_SwiftAirtable_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAirtable_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		206624D51FE733DE4788066D03A84F71 /* Pods-SwiftAirtable_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftAirtable_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		254BE4548AB4079068273887D91B5C8D /* Pods-SwiftAirtable_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftAirtable_Tests-resources.sh"; sourceTree = "<group>"; };
 		3B77B4EACC960F0AB24767D88E567282 /* Pods-SwiftAirtable_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftAirtable_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		49EF9BB4070524391725CF2E1E505A37 /* SwiftAirtable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftAirtable-umbrella.h"; sourceTree = "<group>"; };
 		4EE5C5ED6C71ADC001D1C78840A80A6D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51A41B005AD0CEB4A9FF245F2B990291 /* Pods-SwiftAirtable_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwiftAirtable_Tests.modulemap"; sourceTree = "<group>"; };
+		51A41B005AD0CEB4A9FF245F2B990291 /* Pods-SwiftAirtable_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftAirtable_Tests.modulemap"; sourceTree = "<group>"; };
 		5A46C5D1D7DBAE25AD523A54DDA68E7E /* SwiftAirtable-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftAirtable-dummy.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		66AE7825D0C9F89EB89C143FBB1B76AF /* Pods-SwiftAirtable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftAirtable_Example.release.xcconfig"; sourceTree = "<group>"; };
-		67FA0988948D69F15C32DC1A7219ECB4 /* Pods-SwiftAirtable_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwiftAirtable_Example.modulemap"; sourceTree = "<group>"; };
-		6B73A653109985FD6139B8B9BAD30D2A /* Pods_SwiftAirtable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftAirtable_Example.framework; path = "Pods-SwiftAirtable_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67FA0988948D69F15C32DC1A7219ECB4 /* Pods-SwiftAirtable_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftAirtable_Example.modulemap"; sourceTree = "<group>"; };
+		6B73A653109985FD6139B8B9BAD30D2A /* Pods_SwiftAirtable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAirtable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8700A3219217CB4240A2E191D1B5BD13 /* SwiftAirtable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftAirtable.xcconfig; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		98D4537DBFD155BC13963DBB72ACB3DB /* Pods-SwiftAirtable_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftAirtable_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		9A891302F402F780D1FAE0C794F500B2 /* Pods-SwiftAirtable_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftAirtable_Example-umbrella.h"; sourceTree = "<group>"; };
 		A542AB192031AC9818A2576208E2A110 /* Pods-SwiftAirtable_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftAirtable_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -52,13 +52,13 @@
 		A8E1A0973D6B713388D66E6D3B633ED8 /* SwiftAirtable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftAirtable-prefix.pch"; sourceTree = "<group>"; };
 		AB06FC9CDFF6148285F423D2522DBCD5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB319DD088A7E5663F1A73D176FF4594 /* Pods-SwiftAirtable_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftAirtable_Example-dummy.m"; sourceTree = "<group>"; };
-		BB2F4FE283E6C3FED7E4E8C7C8DE8CD5 /* SwiftAirtable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftAirtable.framework; path = SwiftAirtable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB2F4FE283E6C3FED7E4E8C7C8DE8CD5 /* SwiftAirtable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftAirtable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A7681DD5EED1750A21037FF4BE0D4B /* Pods-SwiftAirtable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftAirtable_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C6DB21AD9702ED1AF64D121F2F7945B5 /* Pods-SwiftAirtable_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftAirtable_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D4D62851509067889BA45A207C0BD5C2 /* Pods-SwiftAirtable_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftAirtable_Example-resources.sh"; sourceTree = "<group>"; };
 		D8B47EAD07E07DF1198AF28D3953DB16 /* Pods-SwiftAirtable_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftAirtable_Example-frameworks.sh"; sourceTree = "<group>"; };
 		DCA4969F91DE017A207841EEAEBF87C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD777B38356E51D97D995DB77E8AECA5 /* SwiftAirtable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftAirtable.modulemap; sourceTree = "<group>"; };
+		DD777B38356E51D97D995DB77E8AECA5 /* SwiftAirtable.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftAirtable.modulemap; sourceTree = "<group>"; };
 		E1A10E83ECCF0104EC13E29A92D253FF /* Pods-SwiftAirtable_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftAirtable_Tests-dummy.m"; sourceTree = "<group>"; };
 		F9CB5C5BE2CE561AEDBF66BB70EB49A5 /* Pods-SwiftAirtable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftAirtable_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FC2F4B238DD8CC8E234EB665B1BD9C49 /* Pods-SwiftAirtable_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftAirtable_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -295,7 +295,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -431,6 +431,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -438,6 +439,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -491,6 +493,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -498,6 +501,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -528,6 +532,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
