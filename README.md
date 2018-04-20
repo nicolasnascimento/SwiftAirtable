@@ -24,7 +24,7 @@ pod 'SwiftAirtable'
 
 ## Author
 
-nicolasnascimento, npn.adsl@gmail.com
+Nicolas Nascimento, npn.adsl@gmail.com
 
 ## Soucery
 
