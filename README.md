@@ -28,7 +28,7 @@ nicolasnascimento, npn.adsl@gmail.com
 
 ## Soucery
 
-An stencil file is provided in the repo that allows you use Sourcery (https://github.com/krzysztofzablocki/Sourcery)
+An stencil file is provided in the repo that allows you generate code using Sourcery (https://github.com/krzysztofzablocki/Sourcery)
 
 ## License
 
