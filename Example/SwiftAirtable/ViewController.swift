@@ -14,10 +14,10 @@ class ViewController: UIViewController {
     // MARK: - Public
     
     // Generate this at https://api.airtable.com
-    let apiKey = <#T##Your API Key#>
+    let apiKey = "YOUR_API_KEY"
     
     // The link to the base you want to fetch
-    let apiBaseUrl = <#T##Your API Base URL#>
+    let apiBaseUrl = "YOUR_BASE_URL"
     
     // The object schema to be used when fetching from Airtable
     let schema = AirtablePerson.schema
