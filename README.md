@@ -1,7 +1,9 @@
 # SwiftAirtable
 
-## Example
+## What it it
+  An unofficial Swift SDK to interact with Airtable's REST API.
 
+## Example
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Installation
