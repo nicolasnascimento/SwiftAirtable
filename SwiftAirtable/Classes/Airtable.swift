@@ -19,7 +19,6 @@
 //  SOFTWARE.
 
 import Foundation
-
 // MARK: - Airtable Value
 
 /// Represents an object that can be saved in Airtable
@@ -216,13 +215,13 @@ public struct Airtable: Equatable, Codable {
     // MARK: - Public
     
     /// The key generated in the Airtable dashboard
-    private let apiKey: String
+    fileprivate let apiKey: String
     
     /// The default path to be used during construction of url
-    private let apiBaseUrl: String
+    fileprivate let apiBaseUrl: String
     
     /// The default schema used when performing queries
-    private let tableSchema: AirtableTableSchema
+    fileprivate let tableSchema: AirtableTableSchema
     
     // MARK: - Init
     public init(apiKey: String, apiBaseUrl: String, schema: AirtableTableSchema) {
@@ -368,7 +367,7 @@ public struct Airtable: Equatable, Codable {
         
     }
     // MARK: - Private
-    private func handleFetchResponse<T>(with data: Data, completion: @escaping (_ objects: [T], _ error: Error?) -> Void) where T: AirtableObject {
+    fileprivate func handleFetchResponse<T>(with data: Data, completion: @escaping (_ objects: [T], _ error: Error?) -> Void) where T: AirtableObject {
         do {
             // Downloaded Variables
             let jsonValue = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
@@ -397,7 +396,7 @@ public struct Airtable: Equatable, Codable {
         }
     }
     // For each object, extract its id and fields
-    private func extractObjects<T>(fromJsonRecords jsonRecords: [[String: Any]], following tableSchema: AirtableTableSchema) -> [T] where T: AirtableObject {
+    fileprivate func extractObjects<T>(fromJsonRecords jsonRecords: [[String: Any]], following tableSchema: AirtableTableSchema) -> [T] where T: AirtableObject {
         // Call extract object for every object (passing the json of the object)
         return jsonRecords.compactMap{ (record) -> T? in
             guard let fields = record["fields"] as? [String: Any], let id = record["id"] as? String else { return nil }
@@ -405,7 +404,7 @@ public struct Airtable: Equatable, Codable {
         }
     }
     // Extracts fields specified in the table schema
-    private func extractObject<T>(fromJsonFields fields: [String: Any], identifiedBy id: String, following tableSchema: AirtableTableSchema) -> T where T: AirtableObject {
+    fileprivate func extractObject<T>(fromJsonFields fields: [String: Any], identifiedBy id: String, following tableSchema: AirtableTableSchema) -> T where T: AirtableObject {
         // Object to store properties
         var airtableObject: [AirtableTableSchemaFieldKey: AirtableValue] = [:]
         tableSchema.fieldsKeys.forEach({ (key) in
@@ -437,11 +436,11 @@ public struct Airtable: Equatable, Codable {
         })
         return T(withId: id, populatedTableSchemaKeys: airtableObject)
     }
-    private func data<T>(of object: T, for tableSchema: AirtableTableSchema) throws -> Data where T: AirtableObject {
+    fileprivate func data<T>(of object: T, for tableSchema: AirtableTableSchema) throws -> Data where T: AirtableObject {
         return try JSONSerialization.data(withJSONObject: self.json(of: object, for: tableSchema), options: [])
     }
     // Extracts the json from an Airtable object representation
-    private func json<T>(of object: T, for tableSchema: AirtableTableSchema) -> [String: Any] where T: AirtableObject {
+    fileprivate func json<T>(of object: T, for tableSchema: AirtableTableSchema) -> [String: Any] where T: AirtableObject {
         let fields: [String: Any] = object.populateAllFields(inEmptyTableSchemaKeys: tableSchema.fieldsKeys).map { (element) -> [String: Any] in
             var field = [String: Any]()
             switch element.key.fieldType {
@@ -493,21 +492,21 @@ extension Airtable {
     }
     
     // MARK: - URL Session and Headers
-    private var airtableAuthorizationHeader: [AnyHashable : Any] {
+    fileprivate var airtableAuthorizationHeader: [AnyHashable : Any] {
         return ["Authorization" : ("Bearer " + self.apiKey)]
     }
-    private var airtableWriteHeader: [AnyHashable: Any] {
+    fileprivate var airtableWriteHeader: [AnyHashable: Any] {
         return [
             "Authorization" : ("Bearer " + self.apiKey),
             "Content-Type" : "application/json"
         ]
     }
-    private var readAuthorizedSession: URLSession {
+    fileprivate var readAuthorizedSession: URLSession {
         let sessionConfiguration = URLSessionConfiguration.default
         sessionConfiguration.httpAdditionalHeaders = self.airtableAuthorizationHeader
         return URLSession(configuration: sessionConfiguration)
     }
-    private var writeAuthorizedSession: URLSession {
+    fileprivate var writeAuthorizedSession: URLSession {
         let sessionConfiguration = URLSessionConfiguration.default
         sessionConfiguration.httpAdditionalHeaders = self.airtableWriteHeader
         return URLSession(configuration: sessionConfiguration)
