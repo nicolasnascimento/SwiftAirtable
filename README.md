@@ -1,10 +1,8 @@
 
 # SwiftAirtable
 
-Web Interface
+# Demo
 ![Alt Text](https://github.com/nicolasnascimento/SwiftAirtable/blob/master/SwiftAirtableDemo2.gif)
-
-App
 ![Alt Text](https://github.com/nicolasnascimento/SwiftAirtable/blob/master/SwiftAirtableDemo.gif)
 
 ## What it it
