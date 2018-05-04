@@ -1,9 +1,7 @@
 
 # SwiftAirtable
 
-![Alt Text](https://github.com/nicolasnascimento/SwiftAirtable/blob/master/SwiftAirtableDemo2.gif)
-
-![Alt Text](https://github.com/nicolasnascimento/SwiftAirtable/blob/master/SwiftAirtableDemo.gif)
+![Alt Text](https://github.com/nicolasnascimento/SwiftAirtable/blob/master/SwiftAirtableDemo3.gif)
 
 ## Description
 An unofficial Swift interface to Airtable's REST API
