@@ -56,6 +56,16 @@ You can perform all standard CRUD operations
 
 ### Create
 ```Swift
+airtable.createObject(with: object, inTable: table) { object: AirtablePerson, error: Error? in
+    if let error = error {
+        // Error Code
+    } else {
+        // Sucess Code
+    }
+}
+```
+### Retrieve
+```Swift
 airtable.fetchAll(table: table) { (objects: [AirtablePerson], error: Error?) in
     if let error = error {
         // Sucess Code
@@ -65,20 +75,9 @@ airtable.fetchAll(table: table) { (objects: [AirtablePerson], error: Error?) in
 }
 ```
 
-### Retrive
-```Swift
-airtable.createObject(with: object, inTable: table) { object: AirtablePerson, error: Error? in
-    if let error = error {
-        // Error Code
-    } else {
-        // Sucess Code
-    }
-}
-```
-
 ### Update
 ```Swift
-airtable.fetchAll(table: table) { (objects: [AirtablePerson], error: Error?) in
+ airtable.updateObject(with: object, inTable: table) { object: AirtablePerson?, error: Error? in
     if let error = error {
         // Sucess Code
     } else {
