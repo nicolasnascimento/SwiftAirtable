@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C96F741209C86DD00E4568D /* LoadingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C96F740209C86DD00E4568D /* LoadingComponent.swift */; };
 		0CBF1B80208A500000F8F1A6 /* AirtablePerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBF1B7F208A500000F8F1A6 /* AirtablePerson.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		0B8528B0444E2D28A7A7C4E6 /* SwiftAirtable.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftAirtable.podspec; path = ../SwiftAirtable.podspec; sourceTree = "<group>"; };
+		0C96F740209C86DD00E4568D /* LoadingComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingComponent.swift; sourceTree = "<group>"; };
 		0CBF1B7F208A500000F8F1A6 /* AirtablePerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirtablePerson.swift; sourceTree = "<group>"; };
 		188E4854685F30CE0E785AEE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3FF5FDA38AC72A92D3D181E7 /* Pods_SwiftAirtable_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAirtable_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 		607FACD21AFB9204008FA782 /* Example for SwiftAirtable */ = {
 			isa = PBXGroup;
 			children = (
+				0C96F740209C86DD00E4568D /* LoadingComponent.swift */,
 				0CBF1B7F208A500000F8F1A6 /* AirtablePerson.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -348,6 +351,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				0CBF1B80208A500000F8F1A6 /* AirtablePerson.swift in Sources */,
+				0C96F741209C86DD00E4568D /* LoadingComponent.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

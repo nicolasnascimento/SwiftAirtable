@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     let apiKey = "YOUR_API_KEY"
     
     // The link to the base you want to fetch
-    let apiBaseUrl = "YOUR_BASE_URL"
+    let apiBaseUrl = "https://api.airtable.com/v0/YOUR_API_BASE_URL"
     
     // The object schema to be used when fetching from Airtable
     let schema = AirtablePerson.schema
@@ -31,8 +31,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var age: UILabel!
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var cool: UILabel!
-    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    @IBOutlet weak var stackView: UIStackView!
+    
+    
+    // The component that adds a loading indicative to a view
+    var loadingComponent: LoadingComponent!
 }
+
 
 extension ViewController {
     var airtable: Airtable {
@@ -45,13 +50,30 @@ extension ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let airtable = self.airtable
-        self.activityIndicatorIsAnimating = true
+        updateAndReload(using: self.airtable)
+    }
+    
+    // MARK: - Actions
+    @IBAction func didPressReload(_ sender: UIBarButtonItem) {
+        
+        updateAndReload(using: self.airtable)
+    }
+    
+}
+
+// MARK: - Private
+extension ViewController {
+    
+    private func updateAndReload(using airtable: Airtable) {
+        self.loadingComponent = LoadingComponent(targetView: self.stackView)
+        self.loadingComponent.addLoadingIndicator()
         
         let table = self.table
         airtable.fetchAll(table: table) { [weak self] (objects: [AirtablePerson], error: Error?) in
             
-            self?.activityIndicatorIsAnimating = false
+            DispatchQueue.main.async {
+                self?.loadingComponent.removeLoadingIndicators()
+            }
             
             if let error = error {
                 print(error)
@@ -67,10 +89,7 @@ extension ViewController {
                 person.date = Date()
                 person.cool = !person.cool
                 
-                self?.activityIndicatorIsAnimating = true
                 airtable.updateObject(with: person, inTable: table) { object, error in
-                    
-                    self?.activityIndicatorIsAnimating = false
                     if let error = error {
                         print(error)
                     } else {
@@ -78,31 +97,6 @@ extension ViewController {
                     }
                 }
             }
-        }
-    }
-    
-}
-
-// MARK: - Private
-extension ViewController {
-    private var activityIndicatorIsAnimating: Bool {
-        get { return self.indicator.isAnimating }
-        set{
-            let activityIndicatorClosure = { [weak self] in
-                if newValue {
-                    self?.indicator.startAnimating()
-                } else {
-                    self?.indicator.stopAnimating()
-                }
-                self?.indicator.isHidden = !newValue
-            }
-            
-            if Thread.isMainThread {
-                activityIndicatorClosure()
-            } else {
-                DispatchQueue.main.async { activityIndicatorClosure() }
-            }
-            
         }
     }
     
