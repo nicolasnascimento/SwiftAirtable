@@ -1,7 +1,6 @@
 
 # SwiftAirtable
 
-# Demo
 ![Alt Text](https://github.com/nicolasnascimento/SwiftAirtable/blob/master/SwiftAirtableDemo2.gif)
 
 ![Alt Text](https://github.com/nicolasnascimento/SwiftAirtable/blob/master/SwiftAirtableDemo.gif)
