@@ -1,10 +1,11 @@
 
 # SwiftAirtable
 
-![Alt Text](https://github.com/nicolasnascimento/SwiftAirtable/blob/master/SwiftAirtableDemo.gif)
-
+Web Interface
 ![Alt Text](https://github.com/nicolasnascimento/SwiftAirtable/blob/master/SwiftAirtableDemo2.gif)
 
+App
+![Alt Text](https://github.com/nicolasnascimento/SwiftAirtable/blob/master/SwiftAirtableDemo.gif)
 
 ## What it it
 An unofficial Swift interface to Airtable's REST API
