@@ -75,7 +75,7 @@ airtable.fetchAll(table: table) { (objects: [AirtablePerson], error: Error?) in
 
 ### Update
 ```Swift
- airtable.updateObject(with: object, inTable: table) { object: AirtablePerson?, error: Error? in
+airtable.updateObject(with: object, inTable: table) { object: AirtablePerson?, error: Error? in
     if let error = error {
         // Sucess Code
     } else {
