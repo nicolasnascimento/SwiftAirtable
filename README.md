@@ -1,8 +1,8 @@
 
 # SwiftAirtable
 
-![Alt Text](https://github.com/nicolasnascimento/SwiftAirtable/blob/master/SwiftAirtableDemo.gif=250x250)
-![Alt Text](https://github.com/nicolasnascimento/SwiftAirtable/blob/master/SwiftAirtableDemo2.gif=250x250)
+![Alt Text](https://github.com/nicolasnascimento/SwiftAirtable/blob/master/SwiftAirtableDemo.gif =250x250)
+![Alt Text](https://github.com/nicolasnascimento/SwiftAirtable/blob/master/SwiftAirtableDemo2.gif =250x250)
 
 
 ## What it it
