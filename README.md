@@ -58,7 +58,7 @@ airtable.createObject(with: object, inTable: table) { object: AirtablePerson, er
     if let error = error {
         // Error Code
     } else {
-        // Sucess Code
+        // Success Code
     }
 }
 ```
@@ -66,9 +66,9 @@ airtable.createObject(with: object, inTable: table) { object: AirtablePerson, er
 ```Swift
 airtable.fetchAll(table: table) { (objects: [AirtablePerson], error: Error?) in
     if let error = error {
-        // Sucess Code
+        // Error Code
     } else {
-        // Erro Code
+        // Success Code
     }
 }
 ```
@@ -77,9 +77,9 @@ airtable.fetchAll(table: table) { (objects: [AirtablePerson], error: Error?) in
 ```Swift
 airtable.updateObject(with: object, inTable: table) { object: AirtablePerson?, error: Error? in
     if let error = error {
-        // Sucess Code
+        // Error Code
     } else {
-        // Erro Code
+        // Success Code
     }
 }
 ```
@@ -90,7 +90,7 @@ airtable.deleteObject(with: object, inTable: table) { sucess, error in
     if let error = error {
         // Error Code
     } else {
-        // Sucess Code
+        // Success Code
     }
 }
 ```
