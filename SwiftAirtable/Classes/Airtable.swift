@@ -85,7 +85,7 @@ extension Dictionary: AirtableValue {
 // MARK: - Attachment
 
 // Attachment is both an Airtable object and an Airtable value
-public struct AirtableAttachment {
+public struct AirtableAttachment: Hashable {
     // We'll use this to keep track of changes and propertly update object in airtable
     fileprivate(set) var updatedUrl: Bool = false
     
@@ -103,12 +103,6 @@ extension AirtableAttachment: Equatable {
     }
 }
 
-extension AirtableAttachment: Hashable {
-    public var hashValue: Int {
-        return self.fileName.hashValue + self.url.hashValue
-    }
-}
-
 extension AirtableAttachment {
     public init(fileName: String, url: String) {
         self.fileName = fileName
@@ -122,7 +116,7 @@ extension AirtableAttachment: AirtableValue {
 }
 
 // MARK: - Airtable Table Schema Field
-public struct AirtableTableSchemaFieldKey: Codable {
+public struct AirtableTableSchemaFieldKey: Codable, Hashable {
     public var fieldName: String
     public var fieldType: KeyType
     
@@ -136,12 +130,6 @@ public struct AirtableTableSchemaFieldKey: Codable {
 extension AirtableTableSchemaFieldKey: Equatable {
     public static func ==(lhs: AirtableTableSchemaFieldKey, rhs: AirtableTableSchemaFieldKey) -> Bool {
         return lhs.fieldName == rhs.fieldName && lhs.fieldType == rhs.fieldType
-    }
-}
-
-extension AirtableTableSchemaFieldKey: Hashable {
-    public var hashValue: Int {
-        return fieldName.hashValue + fieldType.hashValue
     }
 }
 
