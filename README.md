@@ -112,7 +112,7 @@ pod 'SwiftAirtable'
 
 Nicolas Nascimento, npn.adsl@gmail.com
 
-## Soucery
+## Sourcery
 
 An stencil file is provided in the repo that allows you generate code for the AirtableObject protocol using Sourcery (https://github.com/krzysztofzablocki/Sourcery)
 
