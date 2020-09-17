@@ -1,4 +1,8 @@
 
+# Update
+
+For a more modern implementation, see [AirtableKit](https://github.com/appledeveloperacademypucrs/AirtableKit)
+
 # SwiftAirtable
 
 ![Alt Text](https://github.com/nicolasnascimento/SwiftAirtable/blob/master/SwiftAirtableDemo3.gif)
