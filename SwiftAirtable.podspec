@@ -27,9 +27,9 @@ Pod::Spec.new do |s|
   s.author           = { 'nicolasnascimento' => 'npn.adsl@gmail.com' }
   s.source           = { :git => 'https://github.com/nicolasnascimento/SwiftAirtable.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/npnadsl'
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.1'
   s.source_files = 'SwiftAirtable/Classes/**/*'
-  s.swift_version = '4.0'
+  s.swift_version = '5.0'
  
   # s.resource_bundles = {
   #   'SwiftAirtable' => ['SwiftAirtable/Assets/*.png']
