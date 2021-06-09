@@ -30,7 +30,7 @@ extension LoadingComponent {
     }
     
     func addLoadingIndicator() {
-        let activityIndicator = targetView.viewWithTag(activityIndicatorTag) as? UIActivityIndicatorView ?? UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        let activityIndicator = targetView.viewWithTag(activityIndicatorTag) as? UIActivityIndicatorView ?? UIActivityIndicatorView(style: .gray)
         let blurView = targetView.viewWithTag(blurViewTag) as? UIVisualEffectView ?? UIVisualEffectView(effect: UIBlurEffect(style: .light))
         
         blurView.tag = blurViewTag
