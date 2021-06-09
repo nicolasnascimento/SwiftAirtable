@@ -277,7 +277,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftAirtable_Tests/Pods-SwiftAirtable_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftAirtable_Tests/Pods-SwiftAirtable_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SwiftAirtable/SwiftAirtable.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -286,7 +286,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftAirtable_Tests/Pods-SwiftAirtable_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftAirtable_Tests/Pods-SwiftAirtable_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5BD5685B33050516A6ABDFE6 /* [CP] Check Pods Manifest.lock */ = {
@@ -313,7 +313,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftAirtable_Example/Pods-SwiftAirtable_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftAirtable_Example/Pods-SwiftAirtable_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SwiftAirtable/SwiftAirtable.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -322,7 +322,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftAirtable_Example/Pods-SwiftAirtable_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftAirtable_Example/Pods-SwiftAirtable_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6DA886DA44526264E726962 /* [CP] Check Pods Manifest.lock */ = {

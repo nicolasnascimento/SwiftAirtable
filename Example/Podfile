@@ -2,6 +2,8 @@ use_frameworks!
 
 platform :ios, '12.1'
 
+source 'https://github.com/CocoaPods/Specs.git'
+
 target 'SwiftAirtable_Example' do
   pod 'SwiftAirtable', :path => '../'
 
